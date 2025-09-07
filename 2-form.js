@@ -1,2 +1,2 @@
-import"./assets/styles-CZ8WjaWo.js";console.log("gallery");
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */let e={email:"",message:""};const a=document.querySelector(".feedback-form"),l="feedback-form-state",m=localStorage.getItem(l);m&&(e=JSON.parse(m),a.elements.email.value=e.email||"",a.elements.message.value=e.message||"");a.addEventListener("input",t=>{t.target.name&&(e[t.target.name]=t.target.value.trim(),localStorage.setItem(l,JSON.stringify(e)))});a.addEventListener("submit",t=>{if(t.preventDefault(),!e.email||!e.message){alert("Fill please all fields");return}console.log(e),localStorage.removeItem(l),e={email:"",message:""},a.reset()});
 //# sourceMappingURL=2-form.js.map
