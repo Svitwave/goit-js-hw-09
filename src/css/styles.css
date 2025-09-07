@@ -16,3 +16,52 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/*================= GALLERY ===============*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+.gallery img {
+  display: block;
+  width: 360 px;
+  height: 200px;
+  object-fit: cover;
+}
+.modal {
+  background: rgba(46, 47, 66, 0.8);
+}
+.modal img {
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/*================= FORM ==================*/
+
+.feedback-form {
+  width: 480px;
+}
+
+.feedback-form > label {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  font: inherit;
+  padding: 8px;
+}
+
+.feedback-form textarea {
+  resize: none;
+}
